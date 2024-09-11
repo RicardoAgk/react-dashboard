@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
-import SideNav from '@/app/ui/dashboard/sidenav';
 
-const nextConfig = {};
+const nextConfig = {
+    experimental: {
+        ppr: 'incremental',
+    },
+};
 
 export default nextConfig;
-export const experimental_ppr = true;
